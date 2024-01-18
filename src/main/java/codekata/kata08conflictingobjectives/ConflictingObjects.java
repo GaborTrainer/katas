@@ -15,11 +15,11 @@ public class ConflictingObjects {
     public static void main(String[] args) {
         List<String> dictionary = readWordsFromFile("src/main/resources/dictionary.dat");
 
-//        Map<String,String> composedWordsReadable = findConcatenatedWordsMostReadable(dictionary);
-//
-//        for (var word : composedWordsReadable.keySet()) {
-//            System.out.println(word + " + " + composedWordsReadable.get(word) + " => " + word + composedWordsReadable.get(word));
-//        }
+        Map<String,String> composedWordsReadable = findConcatenatedWordsMostReadable(dictionary);
+
+        for (var word : composedWordsReadable.keySet()) {
+            System.out.println(word + " + " + composedWordsReadable.get(word) + " => " + word + composedWordsReadable.get(word));
+        }
 
         Map<String, String> composedWordsOptimized = findConcatenatedWordsMostOptimized(dictionary);
 
